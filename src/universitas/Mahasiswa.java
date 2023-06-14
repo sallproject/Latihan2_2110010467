@@ -1,14 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package universitas;
 
-/**
- *
- * @author ACER
- */
 public class Mahasiswa {
-    
+    private String npm;
+    private String nama;
+    private String prodi;
+
+    public Mahasiswa(String npm, String nama, String prodi) {
+        this.npm = npm;
+        this.nama = nama;
+        this.prodi = prodi;
+    }
+
+    public String getNpm() {
+        return npm;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public String getProdi() {
+        return prodi;
+    }
+
+    public String getDetail() {
+        return "Mahasiswa " + nama + " (NPM: " + npm + ") dari program studi " + prodi;
+    }
 }
